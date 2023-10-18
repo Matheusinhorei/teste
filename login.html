@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Login Form</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 10px;
+    }
+
+    .flex-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .icon-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .icon-box i {
+      font-size: 24px;
+    }
+
+    .or-line {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .or-line::before, .or-line::after {
+      content: "";
+      display: inline-block;
+      width: 40%;
+      border-top: 1px solid #ddd;
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+
+    .form-group label {
+      text-align: left;
+    }
+
+    .forgot-password {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="login-container">
+    <h2>Seja bem-vindo 👏</h2>
+    <p>Por favor insira seus dados!</p>
+    <div class="flex-icons">
+      <div class="icon-box">
+        <i class="fab fa-google"></i>
+        <p>Login Google</p>
+      </div>
+      <div class="icon-box">
+        <i class="fab fa-apple"></i>
+        <p>Login Apple</p>
+      </div>
+    </div>
+    <div class="or-line">
+      <span>ou</span>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" class="form-control" id="password" placeholder="Senha">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+    <div class="forgot-password">
+      <p>Poxa, esqueceu sua senha?</p>
+      <b>Redefina Agora</b>
+    </div>
+    <b>Crie uma conta</b>
+  </div>
+</body>
+</html>
